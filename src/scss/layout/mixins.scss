@@ -1,0 +1,20 @@
+@function rem($px: 16px) {
+    @return ($px / 16px) + rem;
+}
+
+@mixin netbook {
+	@media screen and (max-width: 1255px) {
+		@content;
+	}
+}
+@mixin tablet {
+	@media screen and (max-width: 1010px) {
+		@content;
+	}
+}
+
+@mixin phone {
+	@media screen and (max-width: 490px) {
+		@content;
+	}
+}

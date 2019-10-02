@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Tahoma';
+    src: url('Tahoma.woff2') format('woff2'),
+        url('Tahoma.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Yanone Kaffeesatz';
+    src: url('YanoneKaffeesatz-Regular.woff2') format('woff2'),
+        url('YanoneKaffeesatz-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Yanone Kaffeesatz';
+    src: url('YanoneKaffeesatz-Bold.woff2') format('woff2'),
+        url('YanoneKaffeesatz-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
