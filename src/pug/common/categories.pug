@@ -1,0 +1,8 @@
+.categories
+    h3.aside__title categories
+    ul.categories__list
+        - var cats = ['Backgrounds ', 'Websites ', 'Photography ', 'Vectorized ',  'Backgrounds ', 'Websites ', 'Photography ', 'Vectorized ']
+            each cat in cats
+                li.categories__item.aside__content
+                    span.categories__title #{cat}
+                    span.categories__number (11)

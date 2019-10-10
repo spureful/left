@@ -1,0 +1,13 @@
+.follow{
+    @include tablet {
+        margin-bottom: 50px;
+    }
+}
+
+.follow__title {
+    margin-bottom: 23px;
+}
+
+.follow__img {
+    width: 100%;
+}

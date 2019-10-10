@@ -1,0 +1,8 @@
+nav.nav
+    button(type='button').nav__btn
+        span.nav__btn-line
+    ul.nav__list
+        - var navItems = ['HOME', 'FEATURES', 'GALLERY', 'BLOG', 'CONTACT']
+            each navItem in navItems
+                li.nav__item
+                    a.nav__link(href='#') #{navItem}

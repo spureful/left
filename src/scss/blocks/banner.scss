@@ -1,0 +1,85 @@
+.banner {
+
+    width: 100%;
+
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    
+//    @include phone {
+//        top: 200px;
+//    }
+
+    .banner__img {
+        width: calc(100% - 11px);
+        height: 100%;
+
+    }
+}
+
+
+.banner__list {
+    padding-left: 43px;
+
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+
+.banner__item {
+    width: 12px;
+    height: 12px;
+    background-color: #d2cfc9;
+    border-radius: 50%;
+
+    box-shadow: inset 1px 0 0 #000;
+
+    margin-right: 12px;
+
+
+    position: relative;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+
+    &:before {
+        content: '';
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background-color: #db972e;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+
+
+        transition: 1s;
+        
+        opacity: 0;
+    }
+
+    &:hover {
+        
+        &:before {
+            opacity: 1;
+        }
+     
+    }
+
+}
+
+.banner__item.active {
+    &:before {
+        opacity: 1;
+    }
+}

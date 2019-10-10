@@ -1,0 +1,42 @@
+.tweets {
+    margin-bottom: 23px;
+    position: relative;
+    
+    &:after {
+        content: '';
+        width: 100%;
+        height: 7px;
+        background-image: url(../img/aside-divider.png);
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+}
+
+.tweets__title {
+    margin-bottom: 23px;
+}
+.tweets__list {
+    padding-bottom: 30px;
+}
+
+.tweets__item {
+    padding: 15px 0;
+    border-bottom: 2px solid #32302c;
+    box-shadow: 0 1px 0 #65615b;
+
+    &:last-child {
+        border-bottom: none;
+        box-shadow: 0 0 0 #b2afa8;
+    }
+}
+
+
+.tweets__link {
+    text-decoration: none;
+      color: #ecc731;
+}
+
+.tweets__time {
+ color: #7f7e78;
+}

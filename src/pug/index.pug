@@ -3,19 +3,40 @@ block variables
 
 doctype html
 html(lang="Ru ru")
-	head
-		meta(charset="utf-8")
-		meta(content="ie=edge" http-equiv="x-ua-compatible")
-		meta(content="width=device-width, initial-scale=1" name="viewport")
-		title 
-		link(rel='stylesheet' href='css/main.css')
-	
-	body
-		.wrapper
-			.main 123 356 758
-				
-	
-	
-	script(src='js/scripts.js')
+    head
+        meta(charset="utf-8")
+        meta(content="ie=edge" http-equiv="x-ua-compatible")
+        meta(content="width=device-width, initial-scale=1" name="viewport")
+        title left
+        link(rel='stylesheet' href='css/main.css')
+        
+    body
+        .wrapper
+            .maincontent
+                aside.aside
+                    .container
+                        .logo
+                            +image('aside/logo.png', 'logo', 'logo__img')
+                        .search
+                            .search__container
+                                input.search__input(type='text')
+                        include ./common/nav
+                        include ./common/categories
+                        include ./common/tweets
+                        include ./common/follow
+                main.main
+                    .container
+                        .promo
+                            p.promo__text Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies.
+                        .banner
+                            +image('banner.png', 'banner', 'banner__img')
+                            ul.banner__list
+                                li.banner__item
+                                li.banner__item.active
+                                li.banner__item
+                                li.banner__item
+                        include ./common/feature
+            include ./common/footer
+            
+        script(src='js/scripts.js')
 
-s
