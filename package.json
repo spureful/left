@@ -30,9 +30,9 @@
     "gulp4-run-sequence": "^0.3.2",
     "normalize.css": "^7.0.0",
     "path": "^0.12.7",
-    "webpack": "^4.39.3",
+    "webpack": "^5.94.0",
     "webpack-cli": "^3.3.8",
-    "webpack-stream": "^5.2.1"
+    "webpack-stream": "^7.0.0"
   },
   "dependencies": {}
 }
